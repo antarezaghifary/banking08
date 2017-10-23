@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banking1.BankingController">
+   <children>
+      <StackPane layoutY="-8.0" prefHeight="92.0" prefWidth="600.0" style="-fx-background-color: aqua;" />
+      <Label layoutX="208.0" layoutY="24.0" prefHeight="31.0" prefWidth="161.0" text="         SELAMAT DATANG" />
+      <Label layoutX="193.0" layoutY="55.0" prefHeight="17.0" prefWidth="229.0" text="        MOKLET BANK INDONESIA" />
+      <Label layoutX="229.0" layoutY="93.0" text="Masukkan PIN ANDA" />
+      <JFXPasswordField fx:id="proses" layoutX="200.0" layoutY="117.0" maxWidth="171.0" minWidth="171.0" prefHeight="31.0" prefWidth="171.0" />
+      <GridPane layoutX="200.0" layoutY="194.0" prefHeight="169.0" prefWidth="229.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="button1" onAction="#tkn1" prefHeight="25.0" prefWidth="16.0" text="1" />
+            <JFXButton fx:id="button2" onAction="#tkn2" text="2" GridPane.columnIndex="1" />
+            <JFXButton fx:id="button3" onAction="#tkn3" text="3" GridPane.columnIndex="2" />
+            <JFXButton fx:id="button4" onAction="#tkn4" text="4" GridPane.rowIndex="1" />
+            <JFXButton fx:id="button5" onAction="#tkn5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="button6" onAction="#tkn6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="button7" onAction="#tkn7" text="7" GridPane.rowIndex="2" />
+            <JFXButton fx:id="button8" onAction="#tkn8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXButton fx:id="button9" onAction="#tkn9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <JFXButton fx:id="clear" onAction="#clear" text="C" GridPane.rowIndex="3" />
+            <JFXButton fx:id="button0" onAction="#tkn0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXButton fx:id="btnoke" onAction="#ok" text="OK" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

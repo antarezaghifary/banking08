@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banking1.NominalController">
+   <children>
+      <Pane layoutX="54.0" layoutY="104.0" prefHeight="342.0" prefWidth="617.0" style="-fx-background-color: brown;">
+         <children>
+            <JFXButton fx:id="ble" layoutX="260.0" layoutY="252.0" onAction="#metu" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: white;" text="KELUAR" />
+            <JFXButton fx:id="lu" layoutX="119.0" layoutY="148.0" onAction="#rongatusseket" prefHeight="64.0" prefWidth="134.0" style="-fx-background-color: yellow;" text="250.000" />
+            <JFXButton fx:id="ji" layoutX="119.0" layoutY="62.0" onAction="#seket" prefHeight="64.0" prefWidth="134.0" style="-fx-background-color: yellow;" text="50.000" />
+            <JFXButton fx:id="pat" layoutX="373.0" layoutY="148.0" onAction="#limangatus" prefHeight="64.0" prefWidth="134.0" style="-fx-background-color: yellow;" text="500.000" />
+            <JFXButton fx:id="ro" layoutX="373.0" layoutY="62.0" onAction="#satus" prefHeight="64.0" prefWidth="134.0" style="-fx-background-color: yellow;" text="100.000" />
+         </children>
+      </Pane>
+      <StackPane layoutX="18.0" layoutY="14.0" prefHeight="64.0" prefWidth="689.0" style="-fx-background-color: aqua;">
+         <children>
+            <Label prefHeight="58.0" prefWidth="208.0" text="     SILAHKAN PILIH SALAH SATU" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
